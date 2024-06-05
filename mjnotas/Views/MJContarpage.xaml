@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mjnotas.Views.MJContarpage"
+             Title="Caracteres Alfanuméricos">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="Black" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="BackgroundColor" Value="#6200EE" />
+            <Setter Property="CornerRadius" Value="20" />
+        </Style>
+    </ContentPage.Resources>
+
+    <AbsoluteLayout>
+        <Label 
+            Text="Bienvenido al Conteo de Caracteres de la App por M.J."
+            FontSize="24"
+            FontAttributes="Bold"
+            AbsoluteLayout.LayoutBounds="0.5, 0.1, -1, -1"
+            AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Editor
+            x:Name="TextEditor"
+            Placeholder="Escribe aquí tu texto"
+            HeightRequest="100"
+            AbsoluteLayout.LayoutBounds="0.5, 0.3, 0.8, -1"
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" />
+
+        <Button
+            Text="Calcular"
+            Clicked="OnCalculateClicked"
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.4, -1"
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" />
+
+        <Button
+            Text="Limpiar"
+            Clicked="OnClearClicked"
+            AbsoluteLayout.LayoutBounds="0.5, 0.6, 0.4, -1"
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" />
+
+        <Label x:Name="ResultLabel"
+               Text=""
+               AbsoluteLayout.LayoutBounds="0.5, 0.8, 0.8, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" />
+    </AbsoluteLayout>
+</ContentPage>

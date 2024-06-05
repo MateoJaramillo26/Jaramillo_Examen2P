@@ -7,6 +7,7 @@
             InitializeComponent();
 
             Routing.RegisterRoute(nameof(Views.MJnotepage), typeof(Views.MJnotepage));
+            Routing.RegisterRoute(nameof(Views.MJContarpage), typeof(Views.MJContarpage));
         }
     }
 }
