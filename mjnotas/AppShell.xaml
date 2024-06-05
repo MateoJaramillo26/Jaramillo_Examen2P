@@ -15,14 +15,12 @@
 
         <ShellContent
             Title="Conteo de Caracteres"
-            ContentTemplate="{DataTemplate views:MJaboutpage}"
+            ContentTemplate="{DataTemplate views:MJContarpage}"
             Icon="{OnPlatform 'dialpad.png', iOS='dialpad.png', MacCatalyst='dialpad.png'}"/>
 
         <ShellContent
             Title="About"
             ContentTemplate="{DataTemplate views:MJaboutpage}"
             Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
-        
     </TabBar>
-
 </Shell>

@@ -20,7 +20,7 @@
 
     <AbsoluteLayout>
         <Label 
-            Text="Bienvenido al Conteo de Caracteres de la App por M.J."
+            Text="Conteo de Caracteres por M.J."
             FontSize="24"
             FontAttributes="Bold"
             AbsoluteLayout.LayoutBounds="0.5, 0.1, -1, -1"
